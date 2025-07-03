@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mim - Natália</title>
+  <style>
+    /* Reset e configurações básicas */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, ##FFD700 0%, #E0218A 100%);
+      color: #333;
+      min-height: 100%;
+      line-height: 1.6;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding: 20px;
+      background-attachment: fixed;
+    }
+
+    /* Container principal */
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.98);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Título principal */
+    h1 {
+      color: #a84c91;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #a84c91, #6db3f2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Imagem de perfil */
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      display: block;
+      margin: 30px auto;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Seções de conteúdo */
+    h2 {
+      color: #2c3e50;
+      margin-top: 35px;
+      font-size: 1.8rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #a84c91, #6db3f2);
+      border-radius: 3px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #a84c91;
+      font-weight: bold;
+    }
+
+    /* Links de redes sociais */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .social a:first-child {
+      background: linear-gradient(45deg, #a84c91, #e84393);
+    }
+
+    .social a:last-child {
+      background: linear-gradient(45deg, #6db3f2, #1e90ff);
+    }
+
+    /* Efeitos de fundo decorativos */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 30%, rgba(168, 76, 145, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(109, 179, 242, 0.1) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+        margin: 20px;
+      }
+      
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+      
+      .social {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .social a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Olá! Meu nome é Luiza</h1>
+    <!-- Imagem em formato circular -->
+    <img class="profile-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRkm3cRyPBkr4JTpa7C-vX68aJphHBCavl0A&s" alt="Foto de Luiza">
+
+    <h2>Idade</h2>
+    <p>Tenho 17 anos.</p>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Dançar ballet</li>
+      <li>Ouvir música</li>
+      <li>Ler fantasia e romance</li>
+      <li>Ver filmes comendo sorvete</li>
+    </ul>
+
+    <h2>Meus interesses</h2>
+    <p>Sou apaixonada por exatas, meu sonho está ligado a um acelerador de particulas, gostaria de futuramente criar projetos. Amo os animais, principalemnte minha cachorra Amora.</p>
+
+    <h2>Redes Social</h2>
+    <div class="social">
+      <a href="https://www.instagram.com/luizabedinvasco" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
